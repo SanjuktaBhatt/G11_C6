@@ -44,9 +44,7 @@ while carryOn:
         bally=-bally
     if paddle.collidepoint(ball.x,ball.y):
         bally=-bally
-   #Draw bricks here
-   for i in bricksY:
-        pygame.draw.rect(screen,YELLOW,i)
+  
         
     pygame.draw.rect(screen,(255,255,255) ,ball)
     pygame.display.flip()
