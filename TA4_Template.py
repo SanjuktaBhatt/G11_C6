@@ -46,6 +46,7 @@ while carryOn:
         bally=-bally
    
     pygame.draw.rect(screen,(255,255,255) ,ball)
+    pygame.time.wait(8)
     pygame.display.flip()
 pygame.quit()
     
