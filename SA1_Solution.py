@@ -10,6 +10,8 @@ ball=pygame.Rect(200,250,10,10)
 ballx=-1
 bally=-1
 paddlex=2
+RED = (255,0,0)
+ORANGE = (255,150,0)
 
 bricksR=[pygame.Rect(10 + i* 100,60,80,30) for i in range(6)]
 #Create orange bricks here
@@ -45,12 +47,13 @@ while carryOn:
         bally=-bally
  
     for i in bricksR:
-        pygame.draw.rect(screen,RED,i)
+        pygame.draw.rect(screen,RED,i) 
     #Draw the orange bricks here.
     for i in bricksO:
-        pygame.draw.rect(screen,ORANGE,i)
+        pygame.draw.rect(screen,ORANGE,i) 
    
     pygame.draw.rect(screen,(255,255,255) ,ball)
     pygame.display.flip()
+    pygame.time.wait(8)
 pygame.quit()
     
