@@ -52,11 +52,12 @@ while carryOn:
     for i in bricksO:
         pygame.draw.rect(screen,ORANGE,i)
      #Draw the yellow bricks here.
-     for i in bricksY:
+    for i in bricksY:
         pygame.draw.rect(screen,YELLOW,i)
     
    
     pygame.draw.rect(screen,(255,255,255) ,ball)
     pygame.display.flip()
+    pygame.time.wait(8)
 pygame.quit()
     
