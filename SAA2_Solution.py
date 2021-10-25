@@ -10,6 +10,9 @@ ball=pygame.Rect(200,250,10,10)
 ballx=-1
 bally=-1
 paddlex=2
+RED = (255,0,0)
+ORANGE = (255,150,0)
+YELLOW = (255,255,0)
 
 bricksR=[pygame.Rect(10 + i* 100,60,80,30) for i in range(6)]
 bricksO=[pygame.Rect(10 + i* 100,100,80,30) for i in range(6)]
