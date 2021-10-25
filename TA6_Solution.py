@@ -42,9 +42,9 @@ while carryOn:
         bally=-bally
     #Draw the brick here
     for i in bricksR:
-        pygame.draw.rect(screen,RED,i)
+        pygame.draw.rect(screen,(255,0,0),i) 
    
     pygame.draw.rect(screen,(255,255,255) ,ball)
+    pygame.time.wait(8)
     pygame.display.flip()
 pygame.quit()
-    
