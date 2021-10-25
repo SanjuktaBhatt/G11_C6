@@ -15,7 +15,7 @@ paddlex=2
 bricksR=[]
 for i in range(6):
   brick=pygame.Rect(10 + i* 100,60,80,30)
-  red_bricks.append(brick)
+  bricksR.append(brick)
 
 carryOn = True
 while carryOn:
@@ -48,5 +48,6 @@ while carryOn:
         
     pygame.draw.rect(screen,(255,255,255) ,ball)
     pygame.display.flip()
+    pygame.time.wait(8)
 pygame.quit()
     
